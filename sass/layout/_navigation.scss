@@ -1,0 +1,52 @@
+.main-nav, .header-social {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.main-nav, .social-list {
+    li {
+        display: inline-block;
+        padding-right: 45px;
+        a {
+            text-transform: uppercase;
+            color: $main-lite-font-color;
+        }
+    }
+}
+
+.main-nav a {
+    font: 700 13px 'Droid Sans', sans-serif;
+}
+
+.main-nav li:last-child {
+    padding-right: 0;
+}
+
+.social-list {
+    padding-left: 0;
+    a {
+        font: 14px 'Droid Sans', sans-serif;
+        &:before {
+            font-family: FontAwesome;
+            font-size: 24px;
+            color: $main-lite-font-color;
+        }
+    }
+}
+
+.facebook a:before {
+    padding-right: 15px;
+    content: "\f09a";
+}
+
+.twitter a:before {
+    padding-right: 10px;
+    content: "\f099";
+}
+
+.google a:before {
+    padding-right: 10px;
+    content: "\f0d5";
+}

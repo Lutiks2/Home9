@@ -1,0 +1,21 @@
+.button {
+    padding: 21px 44px 20px;
+    border-radius: 50px;
+    font: 700 12px 'Droid Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.white-button {
+    background: #fff;
+    color: $red-color;
+}
+
+.red-button {
+    background: $red-color;
+    color: #fff;
+}
+
+.white-button:hover, .red-button:hover {
+    background: #9e3c4a;
+    transition: all 0.5s ease;
+}

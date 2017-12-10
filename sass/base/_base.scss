@@ -1,0 +1,39 @@
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    padding-bottom: 45px;
+    h2 {
+        font: 32px 'Oswald', sans-serif;
+        text-transform: uppercase;
+        color: $h2-color;
+        line-height: 0;
+    }
+    h3 {
+        margin-bottom: 0;
+        font: 32px 'Great Vibes', cursive;
+        text-transform: capitalize;
+        color: $red-color;
+        line-height: 0.5;
+    }
+}
+
+.cantus {
+    font: 28px 'Great Vibes', cursive;
+    color: $red-color;
+}
+
+
