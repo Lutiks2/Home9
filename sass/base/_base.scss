@@ -20,14 +20,14 @@ a {
         font: 32px 'Oswald', sans-serif;
         text-transform: uppercase;
         color: $h2-color;
-        line-height: 0;
     }
-    h3 {
+    span {
+        display: block;
         margin-bottom: 0;
         font: 32px 'Great Vibes', cursive;
         text-transform: capitalize;
         color: $red-color;
-        line-height: 0.5;
+        line-height: 0.7;
     }
 }
 

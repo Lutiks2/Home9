@@ -17,7 +17,7 @@
 .welcome-heading {
     font: 700 116px 'Oswald', sans-serif;
     text-transform: uppercase;
-    color: $red-color;
+    color: $main-color;
 }
 
 .welcome-heading-bottom {
@@ -126,11 +126,27 @@
 .location {
     h5 {
         margin: 0;
-        padding: 23px 0 0;
+        padding: 23px 0 33px;
         font: 500 22px 'Oswald', sans-serif;
+        line-height: 1;
     }
     dl {
-        padding-bottom: 10px;
+        margin: 0;
+        padding-bottom: 30px;
+        dt {
+            float: left;
+            span{
+                padding: 0 15px 0 35px;
+            }
+        }
+        dt:first-child {
+            span {
+                padding: 0 12px 0 10px;
+            }
+        }
+        dd {
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -152,6 +168,7 @@
     .founder-main {
         max-width: 556px;
         padding: 85px 0 80px 80px;
+        color: $second-color;
         h2 {
             margin-bottom: 0;
             font: 500 32px 'Oswald', sans-serif;
@@ -174,11 +191,8 @@
 
 .song {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 168px;
-    margin-top: 43px;
+    columns: 3;
+    margin-top: 42px;
     padding-left: 0;
     li {
         width: 199px;
@@ -187,6 +201,9 @@
         a {
             font: 16px 'Droid Sans', sans-serif;
             color: #333333;
+            &:hover {
+                color: $main-color;
+            }
         }
     }
 }
@@ -216,6 +233,46 @@
     }
 }
 
+/*----------download---------------*/
+.download {
+    background: url('../images/download.png') center/cover;
+    .download-main {
+        padding: 80px 0 100px;
+        text-align: center;
+        color: #fff;
+        h2 {
+            margin: 0;
+            font: 500 32px 'Oswald', sans-serif;
+            text-transform: capitalize;
+        }
+        p {
+            margin: 9px 0 40px;
+            font: 22px 'Droid Sans', sans-serif;
+        }
+    }
+}
+
+.download-list {
+    padding-left: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+        &:first-child {
+            margin-right: 10px;
+        }
+        img {
+            max-width: 162px;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+/*----------form--------------*/
+.subscribe {
+    padding: 100px 0 70px;
+}
 
 
 

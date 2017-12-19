@@ -12,6 +12,10 @@
         a {
             text-transform: uppercase;
             color: $main-lite-font-color;
+            &:hover {
+                @include hover-effect;
+                @include transition-effect;
+            }
         }
     }
 }
@@ -41,12 +45,33 @@
     content: "\f09a";
 }
 
+.facebook a:hover:before {
+    padding-right: 15px;
+    content: "\f09a";
+    @include hover-effect;
+    @include transition-effect;
+}
+
 .twitter a:before {
     padding-right: 10px;
     content: "\f099";
 }
 
+.twitter a:hover:before {
+    padding-right: 10px;
+    content: "\f099";
+    @include hover-effect;
+    @include transition-effect;
+}
+
 .google a:before {
     padding-right: 10px;
     content: "\f0d5";
+}
+
+.google a:hover:before {
+    padding-right: 10px;
+    content: "\f0d5";
+    @include hover-effect;
+    @include transition-effect;
 }

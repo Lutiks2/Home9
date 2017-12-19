@@ -38,4 +38,7 @@
     border: 0;
     background: url('../images/arrow.png') no-repeat center top;
     text-indent: -1000em;
+    &:hover {
+        cursor: pointer;
+    }
 }

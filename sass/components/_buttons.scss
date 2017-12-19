@@ -6,16 +6,46 @@
 }
 
 .white-button {
-    background: #fff;
+    background: $second-color;
     color: $red-color;
 }
 
 .red-button {
     background: $red-color;
-    color: #fff;
+    color: $second-color;
 }
 
-.white-button:hover, .red-button:hover {
-    background: #9e3c4a;
-    transition: all 0.5s ease;
+.white-button, .red-button {
+    &:hover {
+        @include button-hover-backgr;
+        @include button-hover-font;
+        @include transition-effect;
+    }
+}
+/*---------slider-navigation-------*/
+.arrow {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 0;
+    list-style: none;
+    text-align: right;
+    li {
+        display: inline-block;
+        a {
+            display: flex;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            background: $red-color;
+            color: #fff;
+            &:hover {
+                @include button-hover-backgr;
+                @include transition-effect;
+            }
+            .fa-angle-right, .fa-angle-left {
+                margin: 0 auto;
+                font-size: 24px;
+            }
+        }
+    }
 }
