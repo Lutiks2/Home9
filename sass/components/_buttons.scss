@@ -7,11 +7,11 @@
 
 .white-button {
     background: $second-color;
-    color: $red-color;
+    color: $main-color;
 }
 
 .red-button {
-    background: $red-color;
+    background: $main-color;
     color: $second-color;
 }
 
@@ -36,7 +36,7 @@
             align-items: center;
             width: 35px;
             height: 35px;
-            background: $red-color;
+            background: $main-color;
             color: #fff;
             &:hover {
                 @include button-hover-backgr;

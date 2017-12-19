@@ -19,21 +19,21 @@ a {
     h2 {
         font: 32px 'Oswald', sans-serif;
         text-transform: uppercase;
-        color: $h2-color;
+        color: $heading-color;
     }
     span {
         display: block;
         margin-bottom: 0;
         font: 32px 'Great Vibes', cursive;
         text-transform: capitalize;
-        color: $red-color;
+        color: $main-color;
         line-height: 0.7;
     }
 }
 
 .cantus {
     font: 28px 'Great Vibes', cursive;
-    color: $red-color;
+    color: $main-color;
 }
 
 

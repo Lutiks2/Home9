@@ -4,14 +4,19 @@
     text-align: center;
     .main-nav {
         display: block;
+        li:before {
+            background: $main-color;
+        }
         a {
             color: #333333;
+            &:hover {
+                color: $main-color;
+            }
         }
     }
     p {
         font: 13px 'Droid Sans', sans-serif;
-        color: $h2-color;
+        color: $heading-color;
         letter-spacing: 0.65px;
     }
 }
-
