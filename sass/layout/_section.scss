@@ -1,28 +1,40 @@
 /*-----------welcome-----------*/
 
 .welcome {
-    height: 70vh;
+    position: relative;
     padding: 100px 0;
     background: url('../images/welcome.png') center/cover;
     text-align: center;
-    h1 {
-        padding-top: 20px;
+    border-bottom: 3px solid #d3d3d3;
+    &:after {
+        content: '';
+        display: block;
+        width: 80%;
+        background: $main-color;
+        height: 3px;
+        position: absolute;
+        margin-top: 100px;
     }
 }
 
-.welcome-heding, .welcome-heading-bottom {
-    display: block;
+.welcome-heading {
+    padding: 80px 0 74px;
+    h1 {
+        margin-top: 0px;
+        font: 700 116px/1 'Oswald', sans-serif;
+        text-transform: uppercase;
+        color: $main-color;
+    }
 }
 
-.welcome-heading {
-    font: 700 116px 'Oswald', sans-serif;
-    text-transform: uppercase;
-    color: $main-color;
+.welcome-heading-bottom {
+    display: block;
 }
 
 .welcome-heading-bottom {
     font: 80px 'Great Vibes', cursive;
     text-transform: capitalize;
+    color: $heading-color;
 }
 
 /*---------------introdusing-------------*/
