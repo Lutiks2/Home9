@@ -1,11 +1,7 @@
-body {
-    background: aqua;
-}
-
 
 /*-----------welcome-----------*/
 
-.welcome {
+.welcome-banner {
     position: relative;
     padding: 100px 0;
     background: url('../images/welcome.png') center/cover;
@@ -23,10 +19,9 @@ body {
 }
 
 .welcome-heading {
-    position: absolute;
     padding: 80px 0 74px;
     h1 {
-        margin-top: 0px;
+        margin-top: 0;
         font: 700 116px/1 'Oswald', sans-serif;
         text-transform: uppercase;
         color: $main-color;
@@ -229,6 +224,10 @@ body {
     h4 {
         font: 500 25px 'Oswald', sans-serif;
     }
+}
+
+.show {
+    display: block;
 }
 /*----------Songs---------------*/
 

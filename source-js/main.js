@@ -1,72 +1,50 @@
-$(window).load(function () {
+/*-------welcome slider--------*/
+
+jQuery(window).load(function () {
   jQuery('.flexslider').flexslider({
-    animation: 'slide'
-  })
-  // jQuery('.videoslider').flexslider({
-  //   animation: "slide"
-  // });
-})
-// Can also be used with $(document).ready()
-jQuery(function () {
-  jQuery('.slider').slick({
-    // infinite: true,
-    // slidesToShow: 3,
-    // slidesToScroll: 3
-    arrows: false,
-  })
-  $('.ar-left').on('click', function () {
-    $('.slider').slick('slickNext')
-  })
-  $('.ar-right').on('click', function () {
-    $('.slider').slick('slickPrev')
+    animation: 'slide',
+    controlNav: false,
+    directionNav: false
   })
 })
-jQuery(function () {
-  jQuery('.videoslider').slick({
-    // infinite: true,
-    // slidesToShow: 3,
-    // slidesToScroll: 3
-    arrows: false
-  })
-
-  $('#ar-left.ar-left').on('click', function () {
-    $('.videoslider').slick('slickNext')
-  })
-  $('#ar-right').on('click', function () {
-    $('.videoslider').slick('slickPrev')
-  })
-
-// jQuery('.slider').slick();
+/*---------introdusing slider------*/
+jQuery('.slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
 })
-/*---------Reed more----------*/
-jQuery(document).ready(function (event) {
 
-
-  $('.pop-up-open').on('click', function (e) {
-    e.preventDefault()
-
-  })
-  $('.pop-up-open').on('click', function (event) {
-    jQuery('.pop-up-show').addClass('show')
-    
-  })
-
-  jQuery('.pop-up-close').on('click', function () {
-    jQuery('.pop-up-show').removeClass('show')
-  });
-
-  jQuery('.pop-up-close').on('click', function (e) {
-    e.preventDefault()
-  })
+jQuery('.ar-left').on('click', function () {
+  $('.slider').slick('slickNext')
 })
-// jQuery(function () {
-//   jQuery('.pop-up-open').on('click', function (e) {
-//     e.preventDefault()
-//
-//   })
-//
-//   jQuery('.pop-up-open').on('click', function () {
-//     jQuery('.pop-up-show').show
-//   })
-//
-// })
+
+jQuery('.ar-right').on('click', function () {
+  $('.slider').slick('slickPrev')
+})
+
+/*-------videoslider-------*/
+
+jQuery('.videoslider').slick({
+  arrows: false
+})
+
+jQuery('#ar-left.ar-left').on('click', function () {
+  jQuery('.videoslider').slick('slickNext')
+})
+
+jQuery('#ar-right').on('click', function () {
+  jQuery('.videoslider').slick('slickPrev')
+})
+
+/*---------Reed more---pop-up-------*/
+
+jQuery('.pop-up-open').on('click', function (event) {
+  jQuery('.pop-up-show').addClass('show')
+  event.preventDefault()
+})
+
+jQuery('.pop-up-close').on('click', function (event) {
+  jQuery('.pop-up-show').removeClass('show')
+  event.preventDefault()
+})
+
