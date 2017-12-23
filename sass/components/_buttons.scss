@@ -30,22 +30,20 @@
     list-style: none;
     text-align: right;
     li {
-        display: inline-block;
-        a {
-            display: flex;
-            align-items: center;
-            width: 35px;
-            height: 35px;
-            background: $main-color;
-            color: #fff;
-            &:hover {
-                @include button-hover-backgr;
-                @include transition-effect;
-            }
-            .fa-angle-right, .fa-angle-left {
-                margin: 0 auto;
-                font-size: 24px;
-            }
+        display: inline-flex;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background: $main-color;
+        color: #fff;
+        &:hover {
+            @include button-hover-backgr;
+            @include transition-effect;
         }
+        .fa-angle-right, .fa-angle-left {
+            margin: 0 auto;
+            font-size: 24px;
+        }
+
     }
 }
